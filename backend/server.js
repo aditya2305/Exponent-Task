@@ -19,4 +19,4 @@ app.get("/", (req, res)=>{
     res.send("started")
 })
 
-app.listen(3001, ()=>{"Server started on port 3001"});
+app.listen(3001, '0.0.0.0', ()=>{"Server started on port 3001"});

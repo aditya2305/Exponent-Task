@@ -19,7 +19,7 @@ function App() {
 
   useEffect(() => {
     if (!userId) return;
-    fetch(`http://localhost:3001/api/user/${userId}`)
+    fetch(`http://3.84.110.147/api/user/${userId}`)
       .then((res) => res.json())
       .then((data) => {
         setScore(data.score);
@@ -31,7 +31,7 @@ function App() {
     if (!userId) return;
 
     const oldScore = score;
-    const res = await fetch(`http://localhost:3001/api/user/${userId}/click`, {
+    const res = await fetch(`http://3.84.110.147/api/user/${userId}/click`, {
       method: 'POST'
     });
     const data = await res.json();
