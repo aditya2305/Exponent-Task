@@ -6,6 +6,10 @@ export default defineConfig({
   plugins: [react()],
   base: './',
   server: {
+    allowedHosts: [
+      'exponentgame.duckdns.org',
+      'localhost'
+    ],
     host : '0.0.0.0',
     port: 3000
   }
